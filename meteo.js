@@ -18,7 +18,7 @@ function loadText() {
 
 
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&lang=it&units=metric&APPID=8e3ee5f65d06249b2f4af71edb68a14f", true);
+    xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&lang=it&units=metric&APPID=INSERT_YOUR_API_KEY", true);
     xhr.onload = function(){
         let output;
         if (this.status === 200) {
